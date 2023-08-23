@@ -1,0 +1,93 @@
+@font-face{
+    font-family: 'Futura Book Font';
+    src: url(../font/Futura\ Book\ font.ttf);
+}
+@font-face{
+    font-family: 'futura medium condensed bt';
+    src: url(../font/futura\ medium\ condensed\ bt.ttf);
+}
+@font-face{
+    font-family: 'Roseritta';
+    src: url(../font/Roseritta.ttf);
+}
+
+
+body{
+    background-color: #344e41;
+}
+
+.logo-name{
+    /* mengatur font nama perusahaan di heading */
+    margin-top: -60px;
+    margin-left: 93px;
+    font-family: Roseritta;
+    font-size: 18px;
+    color: #ccd5ae;
+    font-weight:500;
+}
+.drop {
+    color: darkgray;
+    background-color: #283618;
+}
+.menu1 {
+    /* mengatur seluruh bagian menu */
+    font-family: Copperplate;
+    color: darkgray;
+}
+.name{
+    font-family: Roseritta;
+}
+.warna{
+    background-color: #344e41;
+}
+
+.logo {
+    /* untuk mengatur logo yang di header */
+    margin-top: 15px;
+}
+
+.geser {
+    margin-left: 400px;
+}
+.selamat {
+    /* mengatur font kalimat pembuka */
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: Cambria;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.color3 {
+    /* mengatur warna background card */
+    background-color: #dad7cd;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+
+}
+.isi {
+    /* mengatur bagian isi pembuka */
+    font-family: Cambria;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 100px;
+}
+
+.atur{
+    color: darkgray;
+    font-family: Cambria;
+    background-color: #03112b;
+}
+
+/*mengatur tulisan sign in ketika pencet tombol login */
+.sign{
+    color: black;
+    font-family: Copperplate;
+}
+
+/*mengatur posisi tombol login ketika di inspect */
+.login{
+   
+    margin-left: -12px;
+}
+

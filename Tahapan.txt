@@ -1,0 +1,25 @@
+6 hal yang belum selesai(urutan susah-gampang):
+
+1.translate: masih suka ngilang, belum responsive(muncul semacam container putih), belum di finishing(kasih bendera atau font mnya diganti,dropdown nya
+  di rapikan)
+		suka muncul box untuk sumbangkan terjemahan yang lebih baik
+				{NO 1 CHECK LIST} (white space sudah hilang, pop up box sudah hilang), tinggal finishing, dan mengecek suka hilang)
+
+2.carousel: belum terlalu responsive, tulisan di slider gaada, animasi tulisan di slider, animasi slider
+
+3.whatsapp button: finishing(warna logo, animasi), cari tau gimana caranya biar bisa muncul ketika baru di scroll 
+				{NO 3 CHECK LIST}(tinggal OnScroll Event, ) {Update: ya okelah ya}
+
+4.admin: ubah sistem admin, pakai punya informatika {masih proses}
+
+5.foto2: cari foto2 untuk di web {masih menunggu}
+
+6.font: cari font yang tepat untuk di web	{udah aman}
+
+==============================================================================================================================================================
+										HAL YANG HARUS ADA PADA HALAMAN ABOUT US
+
+1. Mnceritakan fakta2 menarik terkait perusahaan anda, ceritakan informasi penting dari brand, agar pengunjung juga tertarik 
+2. Berikan point2 mengapa harus memilih brand kita, apa yang membedakan dari brand lainnya 
+3. Memberitahukan informasi teknis dan tujuan brand 
+4. Menimbulkan emosi, harus membentuk kepercayaan antara brand dengan masyarakat. Penting untuk mencamtukan ekspektasi yang dapat ditepati kepada pelanggan

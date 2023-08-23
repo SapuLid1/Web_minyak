@@ -1,0 +1,249 @@
+.goog-te-menu-value span:nth-child(3), 
+.goog-te-menu-value span:nth-child(5), 
+.goog-te-gadget-icon, 
+.goog-te-banner-frame.skiptranslate {
+    display:none !important;
+  }
+
+div#google_translate_element div.goog-te-gadget-simple {
+    border: none;
+    background-color: transparent;
+}
+
+.goog-tooltip {
+  display:none !important;
+  }
+  .goog-tooltip:hover {
+  display: none !important;
+  }
+  .goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  }
+
+.translate{
+  border-radius: 32px;
+  margin:auto;
+  
+}
+
+#google_translate_element{width:300px;float:right;text-align:right;display:block}
+.goog-te-banner-frame.skiptranslate { display: none !important;} 
+body { top: 0px !important; }
+#goog-gt-tt{display: none !important; top: 0px !important; } 
+.goog-tooltip skiptranslate{display: none !important; top: 0px !important; } 
+.activity-root { display: hide !important;} 
+.status-message { display: hide !important;}
+.started-activity-container { display: hide !important;}
+
+======================================================================================================================
+<p class="level-item has-text-centered">
+    <a id="socmed" class="link is-info"><img src="assets/img/header-icon/socmed.svg"></a>
+  </p>
+	<div class="sub1">
+		<ul>
+			<li><a target="_blank" href="https://www.facebook.com/mamaco.co.id/"><img src="assets/img/header-icon/fb.svg"></a></li>
+			<li><a target="_blank" href="https://www.instagram.com/mamaco.id"><img src="assets/img/header-icon/ig.svg"></a></li>
+			<li><a target="_blank" href="https://twitter.com/mamaco_id"><img src="assets/img/header-icon/twitter.svg"></a></li>
+			<li><a target="_blank" href="https://www.youtube.com/channel/UCSwc7edeZ4ZS4_vGOhlxzyQ?view_as=subscriber"><img src="assets/img/header-icon/youtube.svg"></a></li>
+			<li><a target="_blank" href="https://wa.me/628123769988"><img src="assets/img/header-icon/wa.svg"></a></li>
+			<!-- <li><a href="mailto:hello@mamaco.co.id"><img src="assets/img/header-icon/email.svg"></a></li> -->
+		</ul>
+
+======================================================================================================================
+
+.whatsapp-button{
+    background-color:#ffb901;
+    background-image:url(/images/icons/whatsapp-orange.svg);
+    background-position:14px;background-repeat:no-repeat;
+    background-size:32px;border-radius:4px;
+    box-shadow:2px 4px 18px rgba(0,0,0,.16);
+    color:#8a6401;
+    font-size:14px;
+    font-weight:600;
+    line-height:1.21;
+    padding:16px 12px 16px 58px;
+    text-decoration:none;
+    transition:all .2s ease-in-out
+}
+.whatsapp-button:hover{
+    background-color:#f5bf31
+}
+.whatsapp-button--fixed{
+    bottom:0;
+    position:fixed;
+    right:24px;
+    transform:translate3d(0,100%,0);
+    transition:transform .3s ease-in-out;
+    will-change:transform;
+    z-index:999
+}
+.whatsapp-button--fixed.show{
+    transform:translate3d(0,-24px,0)
+}
+.hm-banner{
+    position:relative;
+    width:100%
+}
+@media only screen and (max-width:767px){
+    .hm-banner{margin-bottom:36px
+    }
+}
+=============================================================================================================================================
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Google Translation</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="google_translate_element" style="display: none">
+    </div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ 
+				pageLanguage: 'en', 
+				layout: google.translate.TranslateElement.InlineLayout.SIMPLE, 
+				autoDisplay: false },
+				'google_translate_element');
+        }
+    </script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        function translateLanguage(lang) {
+
+            var $frame = $('.goog-te-menu-frame:first');
+            if (!$frame.size()) {
+                alert("Error: Could not find Google translate frame.");
+                return false;
+            }
+            $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+            return false;
+        }
+    </script>
+    <ul>
+        <li><a href="javascript:;" id="German" onclick="translateLanguage(this.id);"><span>German </span>
+            <img src="img/flags/germany_flag.jpg" alt="" /></a> </li>
+        <li><a href="javascript:;" id="Italian" onclick="translateLanguage(this.id);"><span>Italian
+        </span>
+            <img src="img/flags/italy_flag.jpg" alt="" /></a> </li>
+        <li><a href="javascript:;" id="Hindi" onclick="translateLanguage(this.id);"><span>Hindi </span>
+            <img src="img/flags/india_flag.png" alt="" /></a> </li>
+        <li><a href="javascript:;" id="French" onclick="translateLanguage(this.id);"><span>French </span>
+            <img src="img/flags/french_flag.jpg" alt="" /></a> </li>
+        <li><a href="javascript:;" id="Spanish" onclick="translateLanguage(this.id);"><span>Spanish
+        </span>
+            <img src="img/flags/spain_flag.jpg" alt="" /></a> </li>
+        <li><a href="javascript:;" id="Russian" onclick="translateLanguage(this.id);"><span>Russian
+        </span>
+            <img src="img/flags/russia_flag.jpg" alt="" /></a> </li>
+    </ul>
+    <div>
+        In this article we explain how to translate the web page into different language
+        using google translator. We create a custom country list with flag and call the
+        google translator code using javascript custom code. The benifit of this custom
+        list is than we can hide the google translator widget and use all the language to
+        translate the web page.
+    </div>
+    </form>
+</body>
+
+</html>
+=========================================================================================================================================================
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/translate.css">
+    <title> Minyak Kelapa </title>
+    
+</head>
+<body>
+
+<div class="translate">
+<span class="navbar-nav mr-sm-2" id="google_translate_element"></span>
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+<div class="container">
+    <div class="col-12-md">
+        <div class="card-body">
+            <p>halo semuanya, ini adalah uji coba </p>
+        </div>
+    </div>
+</div>
+     
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+
+<script type="text/javascript">
+   function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+      defaultLanguage: 'en',  
+      pageLanguage: 'en',
+      includedLanguages: 'et,id,en,hi,fr,zh-CN',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+      autoDisplay: false,
+      multilanguagePage: true}, 'google_translate_element');
+      };
+</script>
+
+<!-- Flag click handler -->
+<script type="text/javascript">
+    $('.translation-links a').click(function() {
+      var lang = $(this).data('lang');
+      var $frame = $('.goog-te-menu-frame:first');
+      if (!$frame.size()) {
+        alert("Error: Could not find Google translate frame.");
+        return false;
+      }
+      $frame.contents().find('.goog-te-menu2-item span.text:contains('+lang+')').get(0).click();
+      return false;
+    });
+
+$(window).load(function () {
+
+$('.translation-icons').css('visibility', 'visible');
+
+    $('.translation-icons a').click(function(e) {
+        e.preventDefault();
+        var placement = $(this).data('placement');
+        var lang_num = $('.translation-icons a').length;
+        var $frame = $('.goog-te-menu-frame:first');
+
+        if (!$frame.size()) {
+            alert("Error: Could not find Google translate frame.");
+            return false;
+        }
+
+        var langs = $('.goog-te-menu-frame:first').contents().find('a span.text');
+
+        if(langs.length != lang_num) placement = placement+1;
+
+        langs.eq(placement).click();
+        return false;
+    });
+});
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

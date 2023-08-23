@@ -1,0 +1,51 @@
+@font-face{
+    font-family: 'Futura Book Font';
+    src: url(../font/Futura\ Book\ font.ttf);
+}
+@font-face{
+    font-family: 'futura medium condensed bt';
+    src: url(../font/futura\ medium\ condensed\ bt.ttf);
+}
+@font-face{
+    font-family: 'Roseritta';
+    src: url(../font/Roseritta.ttf);
+}
+
+.logo-name{
+    /* mengatur font nama perusahaan di heading */
+    margin-top: -60px;
+    margin-left: 93px;
+    font-family: Roseritta;
+    font-size: 18px;
+    color: #ccd5ae;
+    font-weight:500;
+}
+.drop {
+    color: darkgray;
+    background-color: #283618;
+}
+.menu1 {
+    /* mengatur seluruh bagian menu */
+    font-family: Futura Book Font ;
+    color: darkgray;
+}
+.warna{
+    background-color: #344e41;
+}
+
+.logo {
+    /* untuk mengatur logo yang di header */
+    margin-top: 15px;
+}
+
+.menu2{
+    font-family: 'Times New Roman', Times, serif;
+}
+.tombol{
+    margin-top: 10px;
+    margin-left: 73px;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
+}
+

@@ -1,0 +1,344 @@
+@font-face{
+    font-family: 'Futura Book Font';
+    src: url(../font/Futura\ Book\ font.ttf);
+}
+@font-face{
+    font-family: 'futura medium condensed bt';
+    src: url(../font/futura\ medium\ condensed\ bt.ttf);
+}
+@font-face{
+    font-family: 'Roseritta';
+    src: url(../font/Roseritta.ttf);
+}
+.navbar-default {
+	background:rgba(248, 248, 248, 0);
+	border:rgba(248, 248, 248, 0);
+	padding:5px 5px;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom: 250px;
+    font-size: 26px;
+    color: black;
+    font-weight: bolder ;
+}
+.w-100{
+    height: 100vh;
+}
+.carousel-caption h5{
+    -webkit-transition: all 0.5s ease-in-out 0.15s;
+	-moz-transition: all 0.5s ease-in-out 0.15s;
+	-ms-transition: all 0.5s ease-in-out 0.15s;
+	-o-transition: all 0.5s ease-in-out 0.15s;
+	transition: all 0.5s ease-in-out 0.15s;
+}
+
+.logo{
+    /* untuk mengatur logo yang di header */
+    margin-top: 5px;
+}
+.logo-name{
+    /* mengatur font nama perusahaan di heading */
+    margin-top: -60px;
+    margin-left: 93px;
+    font-family: Roseritta;
+    font-size: 18px;
+    color: #ccd5ae;
+    font-weight:500;
+}
+
+
+.tentang{
+    margin: 0 auto;
+}
+.isi{
+    margin-bottom: 100px;
+}
+
+.color{
+    background-color: #f5ecd7;
+}
+.selamat{
+    font-size: 30px;
+    font-family: Futura Book Font;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+  /* ======button lihat lebih====== */
+
+  .button {
+    padding: 10px 25px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #053b06;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+.button:hover {background-color: #3e8e41}
+  
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+/*=======batas dari button lihat lebih======*/
+
+
+.logo1 {
+    /*mengatur logo di footer */
+    margin-bottom: 40px;
+
+
+}
+
+.minyakFooter {
+    /*mengatur tulisan perusahaan di footer */
+    margin-left: 100px;
+    margin-top: -58px;
+    font-family: Futura Book Font;
+    font-size: 13px;
+    color: white;
+}
+.name-footer{
+    font-family: Roseritta;
+    font-size:13px ;
+    font-weight: 500;
+    color: #ccd5ae;
+}
+
+/*main footer */
+footer .main-footer {
+    padding: 20px 0;
+    background: #1f2605;
+
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+/* copyright footer */
+.footer-copyright {
+    background: #091e05 ;
+    padding: 5px 0;
+}
+
+.footer-copyright .logo {
+    display: inherit;
+}
+
+.footer-copyright nav {
+    float: right;
+    margin-top: 5px;
+}
+
+.footer-copyright nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright nav ul li {
+    border-left: 1px solid #505050;
+    display: inline-block;
+    line-height: 12px;
+    margin: 0;
+    padding: 0 8px;
+}
+
+.footer-copyright nav ul li a {
+    color: #969696;
+}
+
+.footer-copyright nav ul li:first-child {
+    border: medium none;
+    padding-left: 0;
+}
+
+.footer-copyright p {
+    color: #969696;
+    margin: 2px 0 0;
+}
+
+/* footer top */
+
+.footer-top {
+    background: #252525;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #222;
+}
+
+/* footer transparent */
+footer.transparent .footer-top,
+footer.transparent .main-footer {
+    background: transparent;
+}
+
+footer.transparent .footer-copyright {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);
+}
+
+/* footer light */
+footer.light .footer-top {
+    background: #f9f9f9;
+}
+
+footer.light .main-footer {
+    background: #f9f9f9;
+}
+
+footer.light .footer-copyright {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+}
+
+/* widgets */
+
+/* bagian span (semacam garis bawah yang memisah judul dengan isi)*/
+.widget-title span {
+    background: #839FAD none repeat scroll 0 0;
+    display: block;
+    height: 1px;
+    margin-top: 25px;
+    position: relative;
+    width: 20%;
+}
+
+.widget-title span::after {
+    background: inherit;
+    content: "";
+    height: inherit;
+    position: absolute;
+    top: -4px;
+    width: 50%;
+}
+
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+/*akhir dari span */
+
+
+/*mengatur warna dari font bagian footer */
+.typo-light div,
+.typo-light span,
+.typo-light small {
+    color: darkgray;
+}
+
+/*mengatur posisi icon sosmed 
+ul.social-footer2 li {
+    display: inline-block;
+    padding: 0;
+}*/
+
+/*mengatur warna background icon sosmed ketika ingin diklik */
+ul.social-footer2 li a:hover {
+    background-color: #ffbf1e;
+
+}
+
+/*mengatur format ukuran background icon ketika ingin di klik */
+ul.social-footer2 li a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+/*mengatur font di footer*/
+.font-footer {
+    font-family: Futura XBlk BT;
+}
+
+/*mengatur font dibawah prodi informatika di footer */
+.inti {
+    font-family: Futura Book Font;
+}
+
+/*mengatur font di copyright */
+.copy {
+    font-family: futura medium condensed bt;
+    font-size: 13px;
+}
+
+.w-100{
+    height: 100vh;
+}
+
+/*mengatur whatsapp button*/
+.btn-floating{
+    position: fixed;
+    right: 25px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border:0;
+    z-index: 9999;
+    color: white;
+    transition: .2s;
+    
+}
+
+.btn-floating:hover{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.btn-floating span{
+    font-size: 16px;
+    margin-left: 5px;
+    transition: .2s;
+    line-height: 0px;
+    display: none;
+}
+
+.btn-floating:hover span{
+    display: inline-block;
+}
+.whatsapp{
+    bottom: 25px;
+    background-color: green;
+    border: 2px solid white;
+}  
+.btn-floating.whatsapp:hover{
+    background-color: #053b06;
+}
+
+.transparent{
+    background: rgb(0, 151, 19,0.3);
+}
+
+/* -------------tahap proses (buttonWA)----------
+#whatsapp {
+    position: fixed; 
+    top: 10vh; 
+    left: -200px; 
+    z-index: 2;
+    transition: transform ease-in-out 0.3s;
+  }
+  
+  #whatsapp.visible {
+    transform: translateX(200px); 
+  }
+  */
